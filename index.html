@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mondrian Project</title>
+  <style>
+    
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      padding: 0;
+      background-color: black;
+    }
+    .container{
+      grid-template-columns: 80px 200px 50px;
+      grid-template-rows: 100px 100px 30px 50px ;
+
+      display: grid;
+      gap:15px;
+
+    }
+    .yellow{
+      grid-area: 4/3/5/-1;
+    }
+    .white4{
+      grid-area:3/3 / 4/4;
+}
+    .white1{
+
+    }
+    .white3{
+      grid-area: 3/2/5/3
+    }
+    .white2{
+      grid-area:2/1/3/2;
+    }
+    .blue{
+      grid-area:3/1/5/2;
+    }
+    .red{
+      grid-area: 1/2/3/4
+
+    }
+    .white1 , .white2 , .white3 ,.white4{
+      background-color: white;
+      
+    }
+    .red{
+      background-color: rgb(236, 86, 86);
+      
+    }
+    .blue{
+      background-color: #004592;
+    }
+    .yellow{
+      background-color: rgb(228, 228, 135);
+    }
+    .box{
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="white1 box">w1</div>
+    <div class="red box">r1</div>
+    <div class="white2 box">w2</div>
+    <div class="blue box">b1</div>
+    <div class="white3 box">w3</div>
+    <div class="white4 box">w4</div>
+    <div class="yellow box">y</div>
+
+  </div>
+</body>
+
+</html>
